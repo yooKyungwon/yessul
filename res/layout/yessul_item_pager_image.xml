@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="1dip">
+
+	<com.team.yessul.SquareImageView
+		android:id="@+id/imageYessul"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"	
+			android:layout_gravity="center"	
+		android:adjustViewBounds="false"
+		android:scaleType="fitCenter"
+		
+		android:contentDescription="yessul" />
+
+	<ProgressBar
+		android:id="@+id/loadingYessul"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:visibility="gone" />
+	   
+
+</FrameLayout>

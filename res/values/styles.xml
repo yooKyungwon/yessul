@@ -1,0 +1,37 @@
+
+<resources>
+<style name="Theme.Styled" parent="Theme.Sherlock.Light.DarkActionBar">
+    <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+</style>
+
+<style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+    <item name="background">@drawable/main_top</item>
+    <item name="android:background">@drawable/main_top</item>
+
+    <item name="backgroundSplit">@drawable/main_top</item>
+    <item name="android:backgroundSplit">@drawable/main_top</item>
+</style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.Sherlock">
+        <item name="android:windowBackground">@drawable/main_top</item>
+      
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+  
+	<style name="AppTheme1" parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+	      <item name="android:windowBackground">@drawable/main_top</item>
+	</style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

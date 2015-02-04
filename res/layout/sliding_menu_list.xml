@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/slidingmenu"
+     >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+		
+	    android:id="@+id/profilebg"
+	    android:layout_gravity="center"
+        android:orientation="vertical"
+          android:layout_height="200dp"
+           android:background="@drawable/bottom"
+        >
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+		android:layout_gravity="center_horizontal"
+		 android:layout_marginTop="30dp"
+		
+       >
+     <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:border_color="#FFFFFF"
+            app:border_width="2dp"
+            android:background="@drawable/man" 
+             />
+    
+       
+       
+   </LinearLayout>
+
+   
+   <LinearLayout 
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="15dp"
+        >
+     
+       
+       <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        
+         android:id = "@+id/nickName"
+         android:text = "Guest"
+         android:textStyle="bold"
+         android:textSize="20dp"
+         android:textColor="#FFFFFF"
+         />
+   </LinearLayout>
+    
+           </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/complete_btn"
+            android:background="@drawable/cmp_explore_btn_selector"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:id="@+id/ing_btn"
+             android:background="@drawable/ing_explore_btn_selector"
+             android:textStyle="bold"
+             android:textColor="#ffffff"
+            />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/withfriend_btn"
+            
+            android:background="@drawable/fri_explore_btn_selector"
+             android:textStyle="bold"          
+             android:text="0"
+             android:textColor="#ffffff"
+            />
+        
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	        >
+    <LinearLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+           
+         <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/explore_btn"
+            android:background="@drawable/explore_btn_selector"
+           
+            />
+          <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newexplore_btn"
+             android:background="@drawable/new_explore_btn_selector"
+          
+            />
+           <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recommend_btn"
+            android:background="@drawable/recommend_explore_btn_selector"
+            />
+            <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_btn"
+            android:background="@drawable/history_btn_selector"
+        	
+            />
+             <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutus_btn"
+              android:background="@drawable/abouus_btn_selector"
+            />
+          <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout_btn"
+            android:text="Log out"
+            android:visibility="gone"
+            />
+          <LinearLayout 
+                    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+              android:background="@drawable/bottom"
+              ></LinearLayout>
+        
+    </LinearLayout>
+
+  </ScrollView>
+</LinearLayout>

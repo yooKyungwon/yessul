@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="1dip">
+
+	<com.team.yessul.SquareImageView
+		android:id="@+id/imageExplore"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"	
+			android:layout_gravity="center"	
+		android:adjustViewBounds="false"
+		android:scaleType="fitCenter"
+		
+		android:contentDescription="yessul" />
+
+	<ProgressBar
+		android:id="@+id/loadingExplore"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:visibility="gone" />
+	     <Button 
+	             android:layout_gravity="right|bottom"
+                android:id="@+id/btnCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:visibility="gone"
+                android:background="@drawable/check_btn_selector"
+                /> 
+
+</FrameLayout>
